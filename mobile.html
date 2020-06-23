@@ -8,7 +8,7 @@
 </head>
 <script
   src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js">
-</script>
+  </script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
 <style>
@@ -31,22 +31,15 @@
     color: white;
   }
 </style>
-
-<body style="margin : 0px; overflow: hidden;">
-
-  <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-
 <a-assets>
   <img id="my-image" src="./ImagesAR/1pic.jpeg">
 </a-assets>
-    <a-nft type="nft"
-      url="./ImagesAR/3pic"
-      smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-      <a-image src="#my-image"></a-image>
-    </a-nft>
-    <a-entity camera></a-entity>
-  </a-scene>
+<a-scene embedded arjs>
+  <a-marker url="./ImagesAR/3pic.jpeg">
+    <a-image src="#my-image"></a-image>
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
 </body>
 
 </html>Ћ

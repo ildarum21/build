@@ -1,2 +1,2 @@
 (this["webpackJsonpvanilla-osora-cli"]=this["webpackJsonpvanilla-osora-cli"]||[]).push([[0],[function(n,o,i){n.exports=i(2)},function(n,o,i){},function(n,o,i){"use strict";i.r(o);i(1);window.App=new function n(){!function(n,o){if(!(n instanceof o))throw new TypeError("Cannot call a class as a function")}(this,n)}}],[[0,1]]]);
-//# sourceMappingURL=main.bf532349.chunk.js.map
+//# sourceMappingURL=main.d414038e.chunk.js.map
