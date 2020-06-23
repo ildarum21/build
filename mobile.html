@@ -37,11 +37,13 @@
   <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
 
-
+<a-assets>
+  <img id="my-image" src="./ImagesAR/1pic.jpeg">
+</a-assets>
     <a-nft type="nft"
       url="./ImagesAR/3pic"
       smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
-      <a-image src="./ImagesAR/1pic.jpeg"></a-image>
+      <a-image src="#my-image"></a-image>
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
